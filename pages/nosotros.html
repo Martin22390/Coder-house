@@ -10,16 +10,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header class="sticky-header">
         <div class="header-content">
           <img src="../Imagenes/minion ceo.jpg" alt="your logo">
-          <h1>Fonzi.</h1>
+          <h1 class="animate__animated animate__bounce animate__repeat-2">Fonzi.</h1>
           <nav class="nav-header">
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
@@ -32,13 +34,13 @@
       <section class="container-productos">
         <h2 class="title">Fonzi Nosotros</h2>
       </section>
-      <section class="background-imagen-nosotros">
+      <section data-aos="zoom-in-left" data-aos-easing="ease" data-aos-duration="500" class="background-imagen-nosotros">
         <div class="text-container-nosotros">
           <h2 class="texto-homero">Fonzi.</h2>
           <p class="texto-homero">Somos importadores exclusivos de articulos originales Simpsons</p>
         </div>
       </section>      
-      <section class="nosotros">
+      <section data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000" class="nosotros">
         <h2>Nuestros Principios</h2>
         <div class="nosotros-container">
           <div class="nosotros-card">
@@ -76,5 +78,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>   
 </body>
 </html>
