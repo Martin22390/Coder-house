@@ -1,0 +1,39 @@
+
+.container {
+    background-image: url('./Imagenes/fonzo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    color: $color-primario;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(155, 141, 141);
+    padding: 10px;
+    border-radius: 20%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      height: 200px;
+    }
+    
+    .title {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      height: 150px;
+    }
+    
+    .title {
+      font-size: 18px;
+    }
+  }
