@@ -71,7 +71,7 @@ p {
 }
 
 #itemCarrousel-1 {
-  background-image: url(/Imagenes/carusel1.jpg);
+  background-image: url(./Imagenes/funzoabrazogif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -402,7 +402,7 @@ img.modelos-img {
   }
 }
 .container {
-  background-image: url("/Imagenes/fonzo.jpg");
+  background-image: url("./Imagenes/fonzo.jpg");
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -745,7 +745,7 @@ input[type=submit]:hover {
 }
 
 .background-imagen-productos {
-  background-image: url("/Imagenes/simpsons banner-homero.jpg");
+  background-image: url("./Imagenes/simpsons banner-homero.jpg");
   background-size: cover;
   background-position: center;
   width: 100vw;

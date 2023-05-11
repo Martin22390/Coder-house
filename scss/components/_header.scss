@@ -1,10 +1,10 @@
-.sticky-header{
+.sticky-header {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: $color-primario;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- }
+}
 
 .header-content {
     display: flex;
@@ -14,25 +14,27 @@
 
     img {
         max-height: 50px;
-        }
+    }
 
-     h1 {
+    h1 {
         font-size: 30px;
         margin: 0;
-        }
-  } 
-   
+    }
+}
 
-nav{
+
+nav {
     ul {
         list-style: none;
         margin: 0;
         padding: 0;
         display: flex;
-        }
+    }
+
     li {
         margin: 0 20px;
-        }
+    }
+
     a {
         text-decoration: none;
         color: #333;
@@ -40,43 +42,44 @@ nav{
         position: relative;
         padding-bottom: 5px;
 
-            &:before {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 2px;
-                width: 100%;
-                background-color: #333;
-                transform: scaleX(0);
-                transition: transform 0.3s ease;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-            }
-            &:hover:before {
-                transform: scaleX(1);
-            }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background-color: #333;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
 
-            
-        } 
+        &:hover:before {
+            transform: scaleX(1);
+        }
+
+
+    }
 }
 
-.btn-registracion{ 
+.btn-registracion {
     background-color: #5f33c7;
     border-radius: 5%;
     color: #dee2e6;
     padding: 5px;
-   
-  }
+
+}
 
 @media screen and (max-width: 765px) {
-    nav
-        ul {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-         li {
-            margin: 3px;
-            text-align: center;
-         }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
+
+    li {
+        margin: 3px;
+        text-align: center;
+    }
+}
