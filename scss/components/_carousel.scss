@@ -44,34 +44,32 @@
         justify-content: space-between;
         padding: 20px;
 
-        &>i:hover {
+        & > i:hover {
             cursor: pointer;
         }
 
-        &>a>i {
+        & > a > i {
             color: black;
         }
     }
 }
 
 #itemCarrousel-1 {
-    background-image: url(/Imagenes/funzoabrazogif.gif);
+    background-image: url(../imagenes/funzoabrazogif.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
-
 }
 
 #itemCarrousel-2 {
-    background-image: url(/Imagenes/giphy3flor.gif);
+    background-image: url(../imagenes/giphy3flor.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 #itemCarrousel-3 {
-    background-image: url(/Imagenes/funzorockgif.gif);
+    background-image: url(../imagenes/funzorockgif.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -82,7 +80,7 @@
     display: flex;
     justify-content: space-evenly;
 
-    &>a {
+    & > a {
         text-decoration: none;
         font-size: 2em;
         color: grey;

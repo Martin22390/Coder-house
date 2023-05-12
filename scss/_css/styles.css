@@ -1,9 +1,19 @@
 @charset "UTF-8";
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  width: 100vw;
+  height: max(100%, 100vh);
+  overflow-x: hidden;
 }
 
 h1,
@@ -17,6 +27,11 @@ h3 {
 
 p {
   font-family: "Roboto Mono", monospace;
+}
+
+.main {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container-carousel {
@@ -47,12 +62,10 @@ p {
   width: 100%;
   height: 100%;
 }
-
 .itemCarrousel__tarjeta {
   width: 100%;
   height: 100%;
 }
-
 .itemCarrousel__arrows {
   position: absolute;
   top: 0;
@@ -66,31 +79,29 @@ p {
   justify-content: space-between;
   padding: 20px;
 }
-
-.itemCarrousel__arrows>i:hover {
+.itemCarrousel__arrows > i:hover {
   cursor: pointer;
 }
-
-.itemCarrousel__arrows>a>i {
+.itemCarrousel__arrows > a > i {
   color: black;
 }
 
 #itemCarrousel-1 {
-  background-image: url(./imagenes/funzoabrazogif.gif);
+  background-image: url(../imagenes/funzoabrazogif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 #itemCarrousel-2 {
-  background-image: url(./imagenes/giphy3flor.gif);
+  background-image: url(../imagenes/giphy3flor.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 #itemCarrousel-3 {
-  background-image: url(./imagenes/funzorockgif.gif);
+  background-image: url(../imagenes/funzorockgif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -101,40 +112,35 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-
-.conteCarrouselController>a {
+.conteCarrouselController > a {
   text-decoration: none;
   font-size: 2em;
   color: grey;
 }
 
 .footer {
+  width: 100%;
   background-color: #333;
   color: #fff;
   padding: 40px 0;
   position: relative;
   bottom: 0;
-  width: 100%;
   z-index: 9999;
 }
-
 .footer-container {
-  max-width: 1200px;
+  width: min(1200px, 100%);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer-logo {
   display: flex;
   align-items: center;
 }
-
 .footer-logo img {
   height: 50px;
 }
-
 .footer-logo h3 {
   margin-left: 10px;
   font-size: 1.5em;
@@ -143,7 +149,6 @@ p {
 .footer-social {
   text-align: center;
 }
-
 .footer-social h3 {
   margin-bottom: 20px;
 }
@@ -152,14 +157,12 @@ p {
   display: flex;
   justify-content: center;
 }
-
 .social-icons a {
   color: #fff;
   margin: 0 10px;
   font-size: 1.5em;
   transition: color 0.3s ease;
 }
-
 .social-icons a:hover {
   color: #aaa;
 }
@@ -169,7 +172,6 @@ p {
     flex-direction: column;
   }
 }
-
 .sticky-header {
   position: sticky;
   top: 0;
@@ -184,11 +186,9 @@ p {
   align-items: center;
   padding: 10px 20px;
 }
-
 .header-content img {
   max-height: 50px;
 }
-
 .header-content h1 {
   font-size: 30px;
   margin: 0;
@@ -200,11 +200,9 @@ nav ul {
   padding: 0;
   display: flex;
 }
-
 nav li {
   margin: 0 20px;
 }
-
 nav a {
   text-decoration: none;
   color: #333;
@@ -212,7 +210,6 @@ nav a {
   position: relative;
   padding-bottom: 5px;
 }
-
 nav a:before {
   content: "";
   position: absolute;
@@ -225,7 +222,6 @@ nav a:before {
   transition: transform 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 nav a:hover:before {
   transform: scaleX(1);
 }
@@ -243,25 +239,21 @@ nav a:hover:before {
     flex-direction: column;
     gap: 5px;
   }
-
   li {
     margin: 3px;
     text-align: center;
   }
 }
-
 .nuestros-modelos {
   padding: 20px;
   background-color: #f2f2f2;
   margin-top: 20px;
 }
-
 .nuestros-modelos h2 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
 }
-
 .nuestros-modelos .modelos:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -293,13 +285,11 @@ img.modelos-img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 480px) {
   .modelos-grid {
     grid-template-columns: 1fr;
   }
 }
-
 .payment-methods {
   background-color: #f8f8f8;
   padding: 20px;
@@ -319,12 +309,10 @@ img.modelos-img {
   margin: 10px;
   width: 120px;
 }
-
 .payment-icon img {
   max-width: 100%;
   height: auto;
 }
-
 .payment-icon span {
   margin-top: 10px;
   font-size: 14px;
@@ -335,12 +323,10 @@ img.modelos-img {
     flex-direction: column;
     align-items: center;
   }
-
   .payment-icon {
     margin: 10px 0;
   }
 }
-
 .propaganda {
   display: flex;
   flex-wrap: wrap;
@@ -360,7 +346,6 @@ img.modelos-img {
 .img-propaganda {
   flex: 2;
 }
-
 .img-propaganda img {
   border-radius: 5%;
 }
@@ -369,18 +354,15 @@ img.modelos-img {
   .propaganda {
     flex-direction: column;
   }
-
   .texto {
     order: 1;
     flex-basis: 100%;
   }
-
   .img-propaganda {
     order: 2;
     flex-basis: 100%;
   }
 }
-
 .section-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -400,7 +382,6 @@ img.modelos-img {
   justify-content: center;
   align-items: center;
 }
-
 .box-img img {
   max-width: 100%;
   max-height: 100%;
@@ -413,11 +394,9 @@ img.modelos-img {
   align-items: center;
   text-align: center;
 }
-
 .box-text h2 {
   margin-top: 0;
 }
-
 .box-text p {
   margin-bottom: 0;
 }
@@ -426,24 +405,21 @@ img.modelos-img {
   .section-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .box {
     height: 300px;
   }
 }
-
 @media (max-width: 480px) {
   .section-grid {
     grid-template-columns: 1fr;
   }
-
   .box {
     height: 200px;
   }
 }
-
 .container {
-  background-image: url("/imagenes/fonzo.jpg");
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
   background-size: cover;
   background-position: center;
   height: 400px;
@@ -466,24 +442,21 @@ img.modelos-img {
   .container {
     height: 200px;
   }
-
   .title {
     font-size: 24px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .container {
     height: 150px;
   }
-
   .title {
     font-size: 18px;
   }
 }
-
 .texto-homero {
-  background-color: whitesmoke;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
   padding: 10px;
   border-radius: 10%;
 }
@@ -498,13 +471,11 @@ img.modelos-img {
   border: 1px solid #ccc;
   background-color: #f2f2f2;
 }
-
-.cart-items {
+.cart-seccion {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .cart-item {
   display: flex;
   align-items: center;
@@ -516,7 +487,6 @@ img.modelos-img {
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-
 .cart-item img {
   margin-right: 10px;
   width: 100px;
@@ -536,7 +506,6 @@ img.modelos-img {
   padding: 10px;
   cursor: pointer;
 }
-
 .cart-item-remove:hover {
   background-color: #c82333;
 }
@@ -557,7 +526,6 @@ img.modelos-img {
   padding: 10px 20px;
   cursor: pointer;
 }
-
 .cart-checkout:hover {
   background-color: #0056b3;
 }
@@ -567,32 +535,28 @@ img.modelos-img {
 }
 
 @media (max-width: 778px) {
-  .cart-items {
+  .cart-seccion {
     flex-direction: column;
     align-items: center;
   }
 }
-
 @media screen and (max-width: 480px) {
   .cart-item {
     margin: 5px;
     gap: 10px;
   }
 }
-
 .contacto {
   background-color: #f5f5f5;
   padding: 100px 0;
   height: 900px;
 }
-
 .contacto-container {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
-
 .contacto-form {
   flex: 1;
   margin-right: 30px;
@@ -602,7 +566,6 @@ img.modelos-img {
   box-sizing: border-box;
   padding: 30px;
 }
-
 .contacto-form h2 {
   margin-bottom: 20px;
 }
@@ -661,7 +624,6 @@ input[type=submit]:hover {
   /* relación de aspecto 16:9 */
   height: 0;
 }
-
 .map-container iframe {
   position: absolute;
   top: 0;
@@ -675,15 +637,14 @@ input[type=submit]:hover {
     flex-direction: column;
     margin: 20px;
   }
-
   .form {
     margin-right: 0;
     margin: 20px;
   }
 }
-
 .background-imagen-nosotros {
-  background-image: url("./imagenes/simpsons_banner_homero.jpg");
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   background-size: cover;
   background-position: center;
   margin-top: 10px;
@@ -699,12 +660,10 @@ input[type=submit]:hover {
   color: black;
   text-align: center;
 }
-
 .text-container-nosotros h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-
 .text-container-nosotros p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -714,18 +673,15 @@ input[type=submit]:hover {
   background-color: #f8f8f8;
   padding: 80px 0;
 }
-
 .nosotros h2 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 40px;
 }
-
 .nosotros-container {
   display: flex;
   justify-content: space-around;
 }
-
 .nosotros-card {
   width: 300px;
   padding: 30px;
@@ -734,7 +690,6 @@ input[type=submit]:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
 .nosotros-card img {
   width: 200px;
   height: 200px;
@@ -742,12 +697,10 @@ input[type=submit]:hover {
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
 .nosotros-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .nosotros-card p {
   font-size: 16px;
   color: #555;
@@ -759,14 +712,13 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
   }
-
   .nosotros-card {
     margin: 15px;
   }
 }
-
-.container-productos {
-  background-image: url("./imagenes/fonzo.jpg");
+.container-portadafonzo {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -783,7 +735,6 @@ input[type=submit]:hover {
   flex-wrap: wrap;
   margin-top: 20px;
 }
-
 .ecommerce-box {
   flex-basis: 30%;
   padding: 20px;
@@ -792,12 +743,10 @@ input[type=submit]:hover {
   margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
-
 .ecommerce-box img {
   max-width: 100%;
   height: 250px;
 }
-
 .ecommerce-box img:hover {
   transform: scale(1.05);
 }
@@ -811,13 +760,13 @@ input[type=submit]:hover {
   text-decoration: none;
   margin-top: 10px;
 }
-
 .btn-comprar:hover {
   background-color: #0056b3;
 }
 
 .background-imagen-productos {
-  background-image: url("/imagenes/simpsons_banner_homero.jpg");
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -832,12 +781,10 @@ input[type=submit]:hover {
   color: black;
   text-align: center;
 }
-
 .text-container-productos h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-
 .text-container-productos p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -848,31 +795,26 @@ input[type=submit]:hover {
     display: flex;
     flex-flow: wrap;
   }
-
   .ecommerce-box {
     flex-basis: 40%;
     /* Reducir el ancho de los productos en pantallas pequeñas */
   }
 }
-
 @media screen and (max-width: 480px) {
   .ecommerce {
     display: flex;
     flex-direction: column;
   }
-
   .ecommerce-box {
     width: 90%;
   }
 }
-
 .registracion {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 40px;
 }
-
 .registracion-form {
   display: flex;
   flex-direction: column;
@@ -916,7 +858,6 @@ button[type=submit] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button[type=submit]:hover {
   background-color: #45a049;
 }
@@ -927,9 +868,7 @@ button[type=submit]:hover {
     padding: 10px;
   }
 }
-
 @media (max-width: 480px) {
-
   input[type=text],
   input[type=email],
   input[type=password],

@@ -1,151 +1,152 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;   
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 
-h1,h2{
+h1,
+h2 {
   font-family: 'Sedgwick Ave Display', cursive;
 }
 
-h3{
+h3 {
   font-family: 'DynaPuff', cursive;
 }
 
-p{
+p {
   font-family: 'Roboto Mono', monospace;
 }
 
-.texto-homero{
+.texto-homero {
   background-color: whitesmoke;
   padding: 10px;
   border-radius: 10%;
 }
 
 .sticky-header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .header-content img {
-    max-height: 50px;
-  }
-  
-  .header-content h1 {
-    font-size: 30px;
-    margin: 0;
-  }
-  
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-content img {
+  max-height: 50px;
+}
+
+.header-content h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.btn-registracion {
+  background-color: #5f33c7;
+  border-radius: 5%;
+  color: #dee2e6;
+  padding: 5px;
+
+
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover:before {
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 765px) {
   nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    flex-direction: column;
   }
-  
-  
+
   nav li {
-    margin: 0 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    position: relative;
-    padding-bottom: 5px;
-  }
-
-  .btn-registracion{ 
-    background-color: #5f33c7;
-    border-radius: 5%;
-    color: #dee2e6;
-    padding: 5px;
-    
-    
-  }
-  
-  nav a:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #333;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-  }
-  
-  nav a:hover:before {
-    transform: scaleX(1);
-  }
-  
-  @media screen and (max-width: 765px) {
-    nav ul {
-      display: flex;
-      flex-direction: column;
-    }
-    nav li {
-      margin: 3px;
-      text-align: center;
-    }
-  }
-
-  /* main section fotobackground*/
-
-  .container {
-    background-image: url('./Imagenes/fonzo.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .title {
-    color: #fff;
-    font-size: 50px;
+    margin: 3px;
     text-align: center;
-    background-color: rgb(155, 141, 141);
-    padding: 10px;
-    border-radius: 20%;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      height: 200px;
-    }
-    
-    .title {
-      font-size: 24px;
-    }
+}
+
+/* main section fotobackground*/
+
+.container {
+  background-image: url('./imagenes/fonzo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgb(155, 141, 141);
+  padding: 10px;
+  border-radius: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 200px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .container {
-      height: 150px;
-    }
-    
-    .title {
-      font-size: 18px;
-    }
+
+  .title {
+    font-size: 24px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 150px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
 
 
 /* section grid*/
@@ -194,7 +195,7 @@ p{
   .section-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .box {
     height: 300px;
   }
@@ -204,7 +205,7 @@ p{
   .section-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .box {
     height: 200px;
   }
@@ -220,7 +221,7 @@ p{
   background-color: #f2f2f2;
   padding: 50px;
   margin-top: 20px;
- }
+}
 
 .texto {
   flex: 1;
@@ -240,12 +241,12 @@ p{
   .propaganda {
     flex-direction: column;
   }
-  
+
   .texto {
     order: 1;
     flex-basis: 100%;
   }
-  
+
   .img-propaganda {
     order: 2;
     flex-basis: 100%;
@@ -307,98 +308,98 @@ img.modelos-img {
 }
 
 
-  /*section carousel*/
+/*section carousel*/
 
-  .container-carousel{
-    width: 100%;
-    margin-top: 20px;
-    height: 600px;
-    border-bottom: thin black 1px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items:center;
-    align-content:center;
-    background-color: #dee2e6;
-    }
-  
-  .carrousel{
-      width: 100%;
-  }
-  
-  .conteCarrousel{
-      width: 100%;
-      height: 400px;
-      overflow: hidden;
-  }
-  
-  .itemCarrousel{
-      position: relative;
-      width: 100%;
-      height: 100%;
-  }
-  
-  .itemCarrouselTarjeta{
-      width: 100%;
-      height: 100%;
-  }
-  
-  .itemCarrouselArrows{
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%; 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px; 
-  }
-  
-  .itemCarrouselArrows > i:hover {
-      cursor: pointer;
-  }
-  
-  #itemCarrousel-1{
-      background-image: url(./Imagenes/carusel1.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      
-  
-  }
-  
-  #itemCarrousel-2{
-      background-image: url(./Imagenes/carusel2.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-  }
-  
-  #itemCarrousel-3{
-      background-image: url(./Imagenes/carusel3.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-  }
-  
-  .conteCarrouselController{
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-  }
-  
-  .conteCarrouselController > a{
-      text-decoration: none;
-      font-size: 2em;
-      color: grey;
-  }
-  
-  .itemCarrouselArrows > a > i{
-      color: black;
-  }
+.container-carousel {
+  width: 100%;
+  margin-top: 20px;
+  height: 600px;
+  border-bottom: thin black 1px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #dee2e6;
+}
+
+.carrousel {
+  width: 100%;
+}
+
+.conteCarrousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.itemCarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselTarjeta {
+  width: 100%;
+  height: 100%;
+}
+
+.itemCarrouselArrows {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.itemCarrouselArrows>i:hover {
+  cursor: pointer;
+}
+
+#itemCarrousel-1 {
+  background-image: url(./imagenes/carusel1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+
+}
+
+#itemCarrousel-2 {
+  background-image: url(./imagenes/carusel2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#itemCarrousel-3 {
+  background-image: url(./imagenes/carusel3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.conteCarrouselController {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.conteCarrouselController>a {
+  text-decoration: none;
+  font-size: 2em;
+  color: grey;
+}
+
+.itemCarrouselArrows>a>i {
+  color: black;
+}
 
 
 /*footer*/
@@ -422,7 +423,7 @@ img.modelos-img {
   align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
   display: flex;
   align-items: center;
 }
@@ -459,11 +460,12 @@ img.modelos-img {
 .social-icons a:hover {
   color: #aaa;
 }
+
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
   }
-  
+
 }
 
 
@@ -490,7 +492,7 @@ img.modelos-img {
   border-radius: 5px;
   box-sizing: border-box;
   padding: 30px;
-  }
+}
 
 .contacto-form h2 {
   margin-bottom: 20px;
@@ -550,7 +552,8 @@ input[type="submit"]:hover {
 .map-container {
   flex: 1;
   position: relative;
-  padding-bottom: 56.25%; /* relación de aspecto 16:9 */
+  padding-bottom: 56.25%;
+  /* relación de aspecto 16:9 */
   height: 0;
 }
 
@@ -566,20 +569,20 @@ input[type="submit"]:hover {
   .container-contacto {
     flex-direction: column;
     margin: 20px;
-        
+
   }
 
-  
+
   .form-container {
     margin-right: 0;
     margin: 20px;
   }
 }
 
- /* productos*/
+/* productos*/
 
- .container-productos {
-  background-image: url('./Imagenes/fonzo.jpg');
+.container-productos {
+  background-image: url('./imagenes/fonzo.jpg');
   background-size: cover;
   background-position: center;
   height: 250px;
@@ -587,14 +590,14 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  }
+}
 
 
- .ecommerce {
+.ecommerce {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -603,7 +606,7 @@ input[type="submit"]:hover {
   padding: 20px;
   background-color: #f2f2f2;
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -631,7 +634,7 @@ input[type="submit"]:hover {
 }
 
 .background-imagen-productos {
-  background-image: url('./Imagenes/simpsons\ banner-homero.jpg');
+  background-image: url('./imagenes/simpsons\ banner-homero.jpg');
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -659,24 +662,26 @@ input[type="submit"]:hover {
 
 
 @media screen and (max-width: 768px) {
-  .ecommerce{
+  .ecommerce {
     display: flex;
     flex-flow: wrap;
   }
 
   .ecommerce-box {
-    flex-basis: 40%; /* Reducir el ancho de los productos en pantallas pequeñas */
+    flex-basis: 40%;
+    /* Reducir el ancho de los productos en pantallas pequeñas */
   }
 }
 
 @media screen and (max-width: 480px) {
-  .ecommerce{
+  .ecommerce {
     display: flex;
     flex-direction: column;
   }
-  .ecommerce-box{
+
+  .ecommerce-box {
     width: 90%;
-    
+
   }
 }
 
@@ -757,7 +762,7 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
-.parrafo-total{
+.parrafo-total {
   margin-right: 10px;
 }
 
@@ -770,7 +775,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
-  
+
 }
 
 @media screen and (max-width: 480px) {
@@ -818,10 +823,10 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .payment-icon {
     margin: 10px 0;
-    
+
   }
 }
 
@@ -832,7 +837,7 @@ input[type="submit"]:hover {
 /* nosotros */
 
 .background-imagen-nosotros {
-  background-image: url('./Imagenes/simpsons\ banner-homero.jpg');
+  background-image: url('./imagenes/simpsons\ banner-homero.jpg');
   background-size: cover;
   background-position: center;
   margin-top: 10px;
@@ -841,7 +846,7 @@ input[type="submit"]:hover {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  }
+}
 
 .text-container-nosotros {
   /*background-color: rgba(255, 255, 255, 0.7);*/
@@ -910,10 +915,11 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
   }
-  .nosotros-card{
+
+  .nosotros-card {
     margin: 15px;
   }
-  
+
 }
 
 
@@ -924,7 +930,7 @@ input[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   margin: 40px;
-  
+
 }
 
 .registracion-form {
@@ -976,13 +982,14 @@ button[type="submit"]:hover {
 }
 
 @media (max-width: 768px) {
-  .registracion-form{
+  .registracion-form {
     max-width: 100%;
     padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
+
   input[type="text"],
   input[type="email"],
   input[type="password"],
